@@ -1,5 +1,5 @@
 <template>
-    <header class="d-flex justify-content-around align-items-center position-fixed w-100">
+    <header class="d-flex justify-content-between align-items-center position-fixed w-100 px-5">
         <div class="img-logo">
             <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
         </div>
