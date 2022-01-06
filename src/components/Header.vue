@@ -31,7 +31,7 @@ export default {
 @import '../style/utilities.scss';
     header{
         background-color: $thirdColor;
-        z-index: 1;
+        z-index: 2;
         img{
             height: 150px;
         }

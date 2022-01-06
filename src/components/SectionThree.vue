@@ -1,7 +1,7 @@
 <template>
     <div id="section-three">
         <div class="container text-center">
-            <h1 class="my-5">Our Items</h1>
+            <h1 class="my-5 primary-font">Our Items</h1>
             <div class="row">
                 <div class="col-4 mb-4">
                     <div class="vase position-relative">

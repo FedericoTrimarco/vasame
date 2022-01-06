@@ -13,6 +13,7 @@ export default {
         height: 100vh;
         background-image: url('../assets/genni.jpeg');
         background-size: cover;
+        background-position: center top;
     }
 
 </style>
