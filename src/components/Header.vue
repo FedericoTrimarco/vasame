@@ -17,6 +17,10 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="img-logo">
+            <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
+        </div>
     </header>
 </template>
 
@@ -31,7 +35,7 @@ export default {
 @import '../style/utilities.scss';
     header{
         background-color: $thirdColor;
-        z-index: 2;
+        z-index: 6;
         img{
             height: 150px;
         }
