@@ -24,8 +24,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables.scss';
 @import '../style/utilities.scss';
     #section-four{
         padding: 150px 0;
+        a{
+            color: $thirdPurple;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 </style>

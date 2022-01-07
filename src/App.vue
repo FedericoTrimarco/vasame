@@ -39,14 +39,6 @@ export default {
 @import './style/utilities.scss';
 #app{
   background-color: $secondPurple;
-
-  a{
-    color: $thirdPurple;
-    text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
 }
 
 </style>

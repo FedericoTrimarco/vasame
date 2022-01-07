@@ -5,15 +5,15 @@
         </div>
 
         <nav class="info">
-            <ul class="list-unstyled d-flex fs-3 ">
+            <ul class="list-unstyled d-flex fs-1 primary-font">
                 <li>
-                    <a href="#section-two">about</a>
+                    <a href="#section-two">About</a>
                 </li>
                 <li class="mx-5">
-                    <a href="#section-three">our items</a>
+                    <a href="#section-three">Our items</a>
                 </li>
                 <li>
-                    <a href="#section-four">shop</a>
+                    <a href="#section-four">Our Shop</a>
                 </li>
             </ul>
         </nav>
@@ -38,6 +38,29 @@ export default {
         z-index: 6;
         img{
             height: 150px;
+        }
+
+
+        li{
+            a{
+                color: $thirdPurple;
+                text-decoration: none;
+            }
+    
+            &::after{
+                content: '';
+                display: block;
+                height: 5px;
+                width: 0;
+                margin: 0 auto;
+                background-color: $thirdPurple;
+                transition: width .3s linear;
+                border-radius: 15px;
+            }
+
+            &:hover::after{
+                    width: 100%;
+            }
         }
     }
 </style>
