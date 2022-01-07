@@ -69,6 +69,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-4 mb-4" @mouseleave="removeInfo">
+                    <div class="vase position-relative">
+                        <img src="../assets/genni.jpeg" alt="" class="w-100">
+                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
+                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
+                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
+                            <h2>LELLO</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-4" @mouseleave="removeInfo">
+                    <div class="vase position-relative">
+                        <img src="../assets/genni.jpeg" alt="" class="w-100">
+                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
+                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
+                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
+                            <h2>LELLO</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-4" @mouseleave="removeInfo">
+                    <div class="vase position-relative">
+                        <img src="../assets/genni.jpeg" alt="" class="w-100">
+                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
+                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
+                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
+                            <h2>LELLO</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
