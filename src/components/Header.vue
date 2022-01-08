@@ -10,10 +10,10 @@
                     <a href="#section-two">About</a>
                 </li>
                 <li class="mx-5">
-                    <a href="#section-three">Our items</a>
+                    <a href="#section-three">Gallery</a>
                 </li>
                 <li>
-                    <a href="#section-four">Our Shop</a>
+                    <a href="#section-four">Shop</a>
                 </li>
             </ul>
         </nav>
@@ -34,7 +34,8 @@ export default {
 @import '../style/variables.scss';
 @import '../style/utilities.scss';
     header{
-        background-color: $thirdColor;
+        background-color: $thirdPurple;
+        border: 1px solid lightgray;
         z-index: 6;
         img{
             height: 150px;
@@ -43,7 +44,7 @@ export default {
 
         li{
             a{
-                color: $thirdPurple;
+                color: $firstColor;
                 text-decoration: none;
             }
     
@@ -53,7 +54,7 @@ export default {
                 height: 5px;
                 width: 0;
                 margin: 0 auto;
-                background-color: $thirdPurple;
+                background-color: $secondColor;
                 transition: width .3s linear;
                 border-radius: 15px;
             }

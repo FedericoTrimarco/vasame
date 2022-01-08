@@ -1,30 +1,22 @@
 <template>
     <footer class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h4>info</h4>
-                    <ul class="list-unstyled">
-                        <li>info 1</li>
-                        <li>info 2</li>
-                        <li>info 3</li>
-                        <li>info 4</li>
-                        <li>info 5</li>
-                        <li>info ...</li>
-                    </ul>
+            <div class="row align-items-center">
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div>
+                        <h2 class="mb-5 primary-font">info</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                social: <a href="https://www.instagram.com/vasame.napoli/" target="_blank"><i class="fab fa-instagram insta"></i></a>
+                            </li>
+                            <li class="my-3">number: <a href="tel:+447927975669″">+44 7927975669</a></li>
+                            <li>
+                                email: <a href=" mailto: trimarcofabrizia@gmail.com" target="_blank">trimarcofabrizia@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-4 text-center">
-                    <h4>info</h4>
-                    <ul class="list-unstyled">
-                        <li>info 1</li>
-                        <li>info 2</li>
-                        <li>info 3</li>
-                        <li>info 4</li>
-                        <li>info 5</li>
-                        <li>info ...</li>
-                    </ul>
-                </div>
-                <div class="col-4 text-end">
+                <div class="col-6 text-end">
                     <img src="../assets/logo-vasame-transparent.png" alt="" class="w-50">
                 </div>
             </div>
@@ -40,7 +32,24 @@ export default {
 
 <style scoped lang="scss">
 @import '../style/variables.scss';
+@import '../style/utilities.scss';
     footer{
         background-color: $thirdPurple;
+
+        li{
+            font-size: 25px;
+            a{
+                color: $firstColor;
+                margin-left: 10px;
+                text-decoration: none;
+                .insta{
+                    font-size: 50px;
+                }
+
+                &:hover{
+                    color: $secondColor;
+                }
+            }
+        }
     }
 </style>

@@ -2,7 +2,7 @@
     <div id="section-two">
         <div class="container text-center">
             <h1 class="mb-5 primary-font">About</h1>
-            <div class="row pt-5 align-items-center">
+            <div class="row pt-5 mb-5 align-items-center">
                 <div class="col-6">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -18,8 +18,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 px-3 text-start">
+                <div class="col-6 px-5 text-start">
+                    <h3>CHI SIAMO ?</h3>
                     <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit nostrum quidem quos. Tempore nihil corporis reprehenderit iste accusamus culpa? Impedit, delectus.</p>
+
+                    <h3>COM'E` NATO IL PROGETTO ?</h3>
+                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>
                 </div>
             </div>
         </div>
@@ -38,5 +42,13 @@ export default {
     #section-two{
         padding: 200px 0;
         border-bottom: 2px solid lightgray;
+
+        h3{
+            color: $firstColor;
+        }
+
+        p{
+            color: gray;
+        }
     }
 </style>

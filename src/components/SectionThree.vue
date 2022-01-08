@@ -1,107 +1,24 @@
 <template>
     <div id="section-three">
         <div class="container text-center">
-            <h1 class="my-5 pb-5 primary-font">Our Items</h1>
+            <h1 class="my-5 pb-5 primary-font">Gallery</h1>
             <div class="row">
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
+
+                <div
+                    v-for="(vase, id) in mainArray" :key="id"
+                    class="col-4 mb-4" @mouseleave="removeInfo"
+                >
                     <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
+                        <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100">
                         <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
                             <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
                             <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
+                            <h2 class="primary-font">{{ vase.title }}</h2>
+                            <p>{{ vase.info }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4" @mouseleave="removeInfo">
-                    <div class="vase position-relative">
-                        <img src="../assets/genni.jpeg" alt="" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer" @click="showInfo"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
-                            <h2>LELLO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -111,6 +28,9 @@
 <script>
 export default {
     name: 'SectionThree',
+    props: {
+        mainArray: Array,
+    },
     data(){
         return{
             active: false,
@@ -131,6 +51,7 @@ export default {
 @import '../style/variables.scss';
 @import '../style/utilities.scss';
     #section-three{
+        background-color: $thirdPurple;
         padding: 180px 0;
         border-bottom: 1px solid lightgray;
         .col-4{
@@ -140,6 +61,9 @@ export default {
                 transition: transform .5s linear;
                 .info{
                     display: none;
+                    background: rgba(255, 255, 255, 0.616);
+                    opacity: 0;
+                    transition: opacity .3s linear;
                 }
                 &:hover {
                     transform: scale(1.5);
@@ -157,11 +81,6 @@ export default {
                         }
                     }
                 }
-            }
-            .info{
-                background: rgba(255, 255, 255, 0.616);
-                opacity: 0;
-                transition: opacity .3s linear;
             }
         }
     }
