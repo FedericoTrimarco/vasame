@@ -1,10 +1,10 @@
 <template>
     <div id="section-four">
         <div class="container d-flex flex-column align-items-center">
-            <h1 class="primary-font">Shop</h1>
+            <h1 class="primary-font fs-80px">Shop</h1>
             <div class="icons d-flex my-5">
                 <div class="icon text-center">
-                    <i class="fs-1 far fa-credit-card"></i>
+                    <i class="fs-1 far fa-credit-card mb-5"></i>
                     <h4>qualsiasi carta di credito</h4>
                 </div>
             </div>
@@ -24,6 +24,9 @@ export default {
 @import '../style/utilities.scss';
     #section-four{
         padding: 150px 0;
+        h1{
+            color: $firstColor;
+        }
         a{
             color: $firstColor;
             text-decoration: none;

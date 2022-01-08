@@ -4,6 +4,7 @@
 
     <main>
       <!-- <SectionOne /> -->
+      <SectionOne />
       <SectionTwo />
       <SectionThree :mainArray="vases"/>
       <SectionFour />
@@ -16,6 +17,7 @@
 <script>
 // COMPONENTS
 import Header from '@/components/Header.vue'
+import SectionOne from '@/components/SectionOne.vue'
 // import SectionOne from '@/components/SectionOne.vue'
 import SectionTwo from '@/components/SectionTwo.vue'
 import SectionThree from '@/components/SectionThree.vue'
@@ -30,6 +32,7 @@ export default {
   components: {
     Header,
     // SectionOne,
+    SectionOne,
     SectionTwo,
     SectionThree,
     SectionFour,
@@ -50,10 +53,6 @@ export default {
 #app{
   background-color: $secondPurple;
 
-  h1{
-    color: $firstColor;
-    font-size: 80px;
-  }
 }
 
 </style>

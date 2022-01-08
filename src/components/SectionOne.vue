@@ -1,7 +1,10 @@
 <template>
     <div class="section-one">
-        <div class="title w-100 h-100 d-flex justify-content-center align-items-center">
-            <h1 class="primary-font">Vasame</h1>
+        <div class="title w-100 h-100 d-flex justify-content-center align-items-center position-relative">
+            <video width="100%" height="150%" autoplay muted loop>
+                <source src="../assets/video.mp4" type="video/mp4">
+            </video>
+            <h1 class="position-absolute top-50 start-50 translate-middle primary-font">Vasame</h1>
         </div>
     </div>
 </template>
@@ -17,16 +20,12 @@ export default {
 @import '../style/variables.scss';
     .section-one{
         height: 100vh;
-        background-image: url('../assets/IMG_2282 (3).png');
-        background-size: cover;
-        background-position: bottom;
-
         .title{
             color: $secondColor;
-            background-color: rgba(0,0,0,0.5);
 
             h1{
                 font-size: 300px;
+                color: rgba(114, 134, 70, 0.781);
             }
         }
     }

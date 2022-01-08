@@ -1,7 +1,7 @@
 <template>
     <div id="section-two">
         <div class="container text-center">
-            <h1 class="mb-5 primary-font">About</h1>
+            <h1 class="mb-5 primary-font fs-80px">About</h1>
             <div class="row pt-5 mb-5 align-items-center">
                 <div class="col-6">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -42,6 +42,10 @@ export default {
     #section-two{
         padding: 200px 0;
         border-bottom: 2px solid lightgray;
+
+        h1{
+            color: $firstColor;
+        }
 
         h3{
             color: $firstColor;

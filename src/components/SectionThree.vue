@@ -1,7 +1,7 @@
 <template>
     <div id="section-three">
         <div class="container text-center">
-            <h1 class="my-5 pb-5 primary-font">Gallery</h1>
+            <h1 class="my-5 pb-5 primary-font fs-80px">Gallery</h1>
             <div class="row">
 
                 <div
@@ -54,23 +54,26 @@ export default {
         background-color: $thirdPurple;
         padding: 180px 0;
         border-bottom: 1px solid lightgray;
+        h1{
+            color: $firstColor;
+        }
         .col-4{
             .vase{
                 border-radius: 10px;
                 overflow: hidden;
                 transition: transform .5s linear;
                 .info{
-                    display: none;
+                    height: 0;
                     background: rgba(255, 255, 255, 0.616);
                     opacity: 0;
-                    transition: opacity .3s linear;
+                    transition: all .3s linear;
                 }
                 &:hover {
                     transform: scale(1.5);
                     z-index: 5;
                     .info{
                         opacity: 1;
-                        display: block;
+                        height: 60px;
                         height: 70px;
                         transition: height .5s;
                         &.active{
