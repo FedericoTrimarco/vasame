@@ -8,7 +8,7 @@
                     v-for="(vase, id) in mainArray" :key="id"
                     class="vases col-lg-4 col-md-6 col-12 mb-4" @mouseleave="removeInfo"
                 >
-                    <div class="vase position-relative" >
+                    <div class="vase position-relative">
                         <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100">
                         <div class="info position-absolute bottom-0 w-100 px-5" @click="showInfo" :class="{active : active == true}">
                             <i class="fas fa-angle-up cursor-pointer arrow" @click="showInfo"></i>
@@ -34,6 +34,7 @@ export default {
     data(){
         return{
             active: false,
+            opacity: false,
         }
     },
     methods:{
@@ -42,6 +43,9 @@ export default {
         },
         removeInfo(){
             this.active = false;
+        },
+        removeOpacity(){
+            this.opacity = !this.opacity;
         },
     }
 }
