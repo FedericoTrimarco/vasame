@@ -6,13 +6,17 @@
 
                 <div
                     v-for="(vase, id) in mainArray" :key="id"
-                    class="vases col-lg-4 col-md-6 col-12 mb-4" @mouseleave="removeInfo"
+                    class="vases col-lg-4 col-md-6 col-sm-12 mb-4" @mouseleave="removeInfo"
                 >
                     <div class="vase position-relative">
                         <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100">
                         <div class="info position-absolute bottom-0 w-100 px-5 cursor-pointer" @click="showInfo" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer arrow"></i>
-                            <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
+                            <i class="fas fa-angle-up cursor-pointer arrow" v-if="active == false"></i>
+                            <i class="fas fa-chevron-down arrow" v-else></i>
+
+                            <h5 class="fw-normal mb-3" v-if="active == false">DISCOVER THE VASE</h5>
+                            <h5 class="fw-normal mb-3" v-else>HIDE THE VASE</h5>
+
                             <h2 class="primary-font">{{ vase.title }}</h2>
                             <p>{{ vase.info }}</p>
                         </div>
@@ -84,26 +88,24 @@ export default {
                         opacity: 1;
                         height: 70px;
                         .arrow{
-                        animation: upAndDown 1.5s infinite ease ;
-                    }
-                        &.active{
-                            height: 100%;
-                            .arrow{
-                                transform: rotate(180deg);
-                                /* @keyframes upAndDown{
-                                    0%{
-                                        transform: translateY(0);
-                                    }
-                                    50%{
-                                        transform: translateY(7px);
-                                    }
-                                    100%{
-                                        transform: translateY(0);
-                                    }
-                                } */
+                            animation: upAndDown 1.5s infinite ease ;
+                            @keyframes upAndDown{
+                                0%{
+                                    transform: translateY(0);
+                                }
+                                50%{
+                                    transform: translateY(7px);
+                                }
+                                100%{
+                                    transform: translateY(0);
+                                }
                             }
                         }
+                        &.active{
+                            height: 100%;
+                        }
                     }
+                    
                 }
             }
         }

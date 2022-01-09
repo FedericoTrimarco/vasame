@@ -49,10 +49,8 @@ export default {
 <style lang="scss">
 @import './style/variables.scss';
 @import './style/utilities.scss';
-#app{
-  background-color: $secondPurple;
-}
-/* *{
-  border: 1px solid red
-} */
+
+  #app{
+    background-color: $secondPurple;
+  }
 </style>

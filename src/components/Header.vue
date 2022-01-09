@@ -62,6 +62,7 @@ export default {
         background: rgb(255,220,254);
         background: linear-gradient(180deg, rgba(255,220,254,0.8603816526610644) 52%, rgba(255,220,254,0.7203256302521008) 88%);
         z-index: 20;
+        border: 1px solid $fourth;
         img{
             height: 150px;
         }
@@ -104,8 +105,11 @@ export default {
         }
     }
     @media screen and (max-width: 991px) {
-        img{
-            height: 100px;
+        header{
+            img{
+                height: 80px;
+            }
+
         }
     }
 </style>

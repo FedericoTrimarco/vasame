@@ -1,7 +1,7 @@
 <template>
     <div class="section-one">
         <div class="title w-100 h-100 d-flex justify-content-center align-items-center position-relative">
-            <video width="100%" height="150%" autoplay muted loop>
+            <video width="100%" height="100%" autoplay muted loop>
                 <source src="../assets/video.mp4" type="video/mp4">
             </video>
             <h1 class="position-absolute top-50 start-50 translate-middle primary-font">Vasame</h1>
@@ -19,8 +19,6 @@ export default {
 @import '../style/utilities.scss';
 @import '../style/variables.scss';
     .section-one{
-        height: 100vh;
-        width: 100vw;
         video{
             object-fit: cover;
         }
