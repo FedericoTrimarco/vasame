@@ -39,7 +39,6 @@ export default {
             font-size: 25px;
             a{
                 color: $firstColor;
-                margin-left: 10px;
                 text-decoration: none;
                 .insta{
                     font-size: 50px;
