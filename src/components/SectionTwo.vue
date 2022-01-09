@@ -18,10 +18,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 px-5 text-start">
+                <div class="col-lg-6 col-md-12 px-5 text-md-center text-lg-start">
                     <h3>CHI SIAMO ?</h3>
-                    <p class="fs-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit nostrum quidem quos. Tempore nihil corporis reprehenderit iste accusamus culpa? Impedit, delectus.</p>
-
+                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit.</p>
+                    <img src="../assets/stripe.png" alt="stripe" class="w-25 d-lg-none mb-4">
                     <h3>COM'E` NATO IL PROGETTO ?</h3>
                     <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>
                 </div>

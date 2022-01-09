@@ -19,6 +19,7 @@ export default {
 @import '../style/utilities.scss';
 @import '../style/variables.scss';
     .section-one{
+        height: 100vh;
         video{
             object-fit: cover;
         }

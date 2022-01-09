@@ -88,7 +88,7 @@ export default {
                         opacity: 1;
                         height: 70px;
                         .arrow{
-                            animation: upAndDown 1.5s infinite ease ;
+                            animation: upAndDown 1.5s infinite ease;
                             @keyframes upAndDown{
                                 0%{
                                     transform: translateY(0);
