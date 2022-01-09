@@ -3,24 +3,24 @@
         <div class="container text-center">
             <h1 class="mb-5 primary-font fs-80px">About</h1>
             <div class="row pt-5 mb-5 align-items-center">
-                <div class="col-6">
+                <div class="col-6 d-lg-block d-none">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="../assets/imma.jpeg" class="d-block w-100" alt="...">
+                                <img src="../assets/imma.jpeg" class="d-block w-100" alt="imma">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="../assets/genni.jpeg" class="d-block w-100" alt="...">
+                                <img src="../assets/genni.jpeg" class="d-block w-100" alt="genni">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="../assets/nunzia.jpeg" class="d-block w-100" alt="...">
+                                <img src="../assets/nunzia.jpeg" class="d-block w-100" alt="nunzia">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 px-5 text-start">
+                <div class="col-lg-6 col-md-12 px-5 text-start">
                     <h3>CHI SIAMO ?</h3>
-                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit nostrum quidem quos. Tempore nihil corporis reprehenderit iste accusamus culpa? Impedit, delectus.</p>
+                    <p class="fs-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit nostrum quidem quos. Tempore nihil corporis reprehenderit iste accusamus culpa? Impedit, delectus.</p>
 
                     <h3>COM'E` NATO IL PROGETTO ?</h3>
                     <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>

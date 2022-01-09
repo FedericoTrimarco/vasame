@@ -60,3 +60,18 @@ export const vases = [
         info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur nostrum repudiandae nihil blanditiis expedita? Incidunt tempore consequatur eum quaerat fugiat impedit fugit quasi, excepturi fuga veritatis dignissimos porro sequi modi.',
     },
 ]
+
+export const section = [
+    {
+        title: 'About',
+        directory: '#section-two'
+    },
+    {
+        title: 'Gallery',
+        directory: '#section-three'
+    },
+    {
+        title: 'Shop',
+        directory: '#section-four'
+    },
+]

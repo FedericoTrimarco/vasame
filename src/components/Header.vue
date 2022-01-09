@@ -1,32 +1,58 @@
 <template>
-    <header class="d-flex justify-content-between align-items-center position-fixed w-100 px-5">
-        <div class="img-logo">
-            <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
+    <header class="position-fixed w-100 px-lg-5 pe-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="img-logo">
+                <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
+            </div>
+            <!-- navbar -->
+            <nav class="info d-none d-lg-block">
+                <ul class="list-unstyled d-flex fs-1 primary-font">
+                    <li
+                        class="me-5"
+                        v-for="(el, id) in mainArray" :key="`link-${id}`">
+                        <a :href="el.directory">{{ el.title }}</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- second-logo -->
+            <div class="img-logo d-none d-lg-block">
+                <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
+            </div>
+
+            <i class="hamburger fas fa-bars fs-1 d-lg-none" @click="showRemoveInfo"></i>
+
         </div>
 
-        <nav class="info">
-            <ul class="list-unstyled d-flex fs-1 primary-font">
-                <li>
-                    <a href="#section-two">About</a>
-                </li>
-                <li class="mx-5">
-                    <a href="#section-three">Gallery</a>
-                </li>
-                <li>
-                    <a href="#section-four">Shop</a>
+
+        <div class="responsive-info d-lg-none" :class="{active : active == true}">
+            <ul class="list-unstyled d-flex flex-column pt-5 align-items-center primary-font border h-100">
+                <li
+                    @click="showRemoveInfo"
+                    class="me-5"
+                    v-for="(el, id) in mainArray" :key="`link-${id}`">
+                    <a :href="el.directory">{{ el.title }}</a>
                 </li>
             </ul>
-        </nav>
-
-        <div class="img-logo">
-            <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame">
         </div>
     </header>
 </template>
 
 <script>
 export default {
-    name:'Header'
+    name:'Header',
+    props: {
+        mainArray: Array,
+    },
+    data() {
+        return{
+            active: false,
+        }
+    },
+    methods: {
+        showRemoveInfo() {
+            this.active = !this.active;
+        }
+    }
 }
 </script>
 
@@ -34,9 +60,9 @@ export default {
 @import '../style/variables.scss';
 @import '../style/utilities.scss';
     header{
-        background-color: $thirdPurple;
-        border: 1px solid lightgray;
-        z-index: 6;
+        background: rgb(255,220,254);
+        background: linear-gradient(180deg, rgba(255,220,254,0.8603816526610644) 52%, rgba(255,220,254,0.7203256302521008) 88%);
+        z-index: 20;
         img{
             height: 150px;
         }
@@ -62,6 +88,19 @@ export default {
             &:hover::after{
                     width: 100%;
             }
+        }
+    }
+    .responsive-info{
+        position: relative;
+        z-index: 6;
+        height: 0;
+        transition: height .2s linear;
+        overflow: hidden;
+        background-color: $secondColor;
+        width: 100vw;
+        font-size: 100px;
+        &.active{
+            height: 100vh;
         }
     }
 </style>
