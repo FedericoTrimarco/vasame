@@ -8,9 +8,9 @@
                     v-for="(vase, id) in mainArray" :key="id"
                     class="vases col-lg-4 col-md-6 col-12 mb-4" @mouseleave="removeInfo"
                 >
-                    <div class="vase position-relative">
+                    <div class="vase position-relative" >
                         <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" :class="{active : active == true}">
+                        <div class="info position-absolute bottom-0 w-100 px-5" @click="showInfo" :class="{active : active == true}">
                             <i class="fas fa-angle-up cursor-pointer arrow" @click="showInfo"></i>
                             <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
                             <h2 class="primary-font">{{ vase.title }}</h2>
@@ -62,28 +62,6 @@ export default {
                 border-radius: 10px;
                 overflow: hidden;
                 transition: transform .5s linear;
-                /* .info{
-                    height: 0;
-                    background: rgba(255, 255, 255, 0.616);
-                    opacity: 0;
-                    transition: all .3s linear;
-                }
-                &:hover {
-                    transform: scale(1.5);
-                    z-index: 5;
-                    .info{
-                        opacity: 1;
-                        height: 60px;
-                        height: 70px;
-                        transition: height .5s;
-                        &.active{
-                            height: 100%;
-                            i{
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
-                } */ 
             }
         }
     }
@@ -130,14 +108,8 @@ export default {
                     transition: opacity .5s linear;
                 }
                 &:hover {
-                    .info{
+                    .info.active{
                         opacity: 1;
-                        &.active{
-                            height: 100%;
-                            i{
-                                transform: rotate(180deg);
-                            }
-                        }
                     }
                 }
             }

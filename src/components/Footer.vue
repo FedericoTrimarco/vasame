@@ -2,7 +2,7 @@
     <footer class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-6 d-flex flex-column align-items-center">
+                <div class="col-md-6 col-12 d-flex flex-column align-items-center">
                     <div>
                         <h2 class="mb-5 primary-font">info</h2>
                         <ul class="list-unstyled">
@@ -16,8 +16,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 text-end">
-                    <img src="../assets/logo-vasame-transparent.png" alt="" class="w-50">
+                <div class="col-md-6 col-12">
+                    <img src="../assets/logo-vasame-transparent.png" alt="" class="w-100">
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ export default {
 @import '../style/utilities.scss';
     footer{
         background-color: $thirdPurple;
-
+        
         li{
             font-size: 25px;
             a{
@@ -52,4 +52,13 @@ export default {
             }
         }
     }
+    /**********
+    RESPONSIVE
+    **********/
+    @media screen and (max-width: 767px) {
+        h2{
+            text-align: center;
+        }
+    }
+    
 </style>
