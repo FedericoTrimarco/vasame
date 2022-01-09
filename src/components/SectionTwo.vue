@@ -42,6 +42,10 @@ export default {
 @import '../style/variables.scss';
 @import '../style/utilities.scss';
     #section-two{
+        .carousel-item{
+            border-radius: 10px;
+            overflow: hidden;
+        }
         padding: 200px 0;
         border-bottom: 2px solid lightgray;
 

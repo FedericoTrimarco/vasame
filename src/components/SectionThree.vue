@@ -82,7 +82,7 @@ export default {
                     transition: all .5s;
                 }
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.23);
                     z-index: 5;
                     .info{
                         opacity: 1;
