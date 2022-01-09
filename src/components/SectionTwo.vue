@@ -6,13 +6,13 @@
                 <div class="col-6 d-lg-block d-none">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="3000">
+                            <div class="carousel-item active" data-bs-interval="1800">
                                 <img src="../assets/imma.jpeg" class="d-block w-100" alt="imma">
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
+                            <div class="carousel-item" data-bs-interval="1800">
                                 <img src="../assets/genni.jpeg" class="d-block w-100" alt="genni">
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
+                            <div class="carousel-item" data-bs-interval="1800">
                                 <img src="../assets/nunzia.jpeg" class="d-block w-100" alt="nunzia">
                             </div>
                         </div>

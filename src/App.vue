@@ -51,7 +51,8 @@ export default {
 @import './style/utilities.scss';
 #app{
   background-color: $secondPurple;
-
 }
-
+/* *{
+  border: 1px solid red
+} */
 </style>

@@ -20,11 +20,15 @@ export default {
 @import '../style/variables.scss';
     .section-one{
         height: 100vh;
+        width: 100vw;
+        video{
+            object-fit: cover;
+        }
         .title{
             color: $secondColor;
 
             h1{
-                font-size: 300px;
+                font-size: 200px;
                 color: rgba(114, 134, 70, 0.781);
             }
         }

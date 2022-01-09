@@ -10,8 +10,8 @@
                 >
                     <div class="vase position-relative">
                         <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100">
-                        <div class="info position-absolute bottom-0 w-100 px-5" @click="showInfo" :class="{active : active == true}">
-                            <i class="fas fa-angle-up cursor-pointer arrow" @click="showInfo"></i>
+                        <div class="info position-absolute bottom-0 w-100 px-5 cursor-pointer" @click="showInfo" :class="{active : active == true}">
+                            <i class="fas fa-angle-up cursor-pointer arrow"></i>
                             <h5 class="fw-normal mb-3">DISCOVER THE VASE</h5>
                             <h2 class="primary-font">{{ vase.title }}</h2>
                             <p>{{ vase.info }}</p>
@@ -34,7 +34,6 @@ export default {
     data(){
         return{
             active: false,
-            opacity: false,
         }
     },
     methods:{
@@ -43,9 +42,6 @@ export default {
         },
         removeInfo(){
             this.active = false;
-        },
-        removeOpacity(){
-            this.opacity = !this.opacity;
         },
     }
 }
@@ -79,7 +75,7 @@ export default {
                     height: 0;
                     background: rgba(255, 255, 255, 0.616);
                     opacity: 0;
-                    transition: all .5s linear;
+                    transition: all .5s;
                 }
                 &:hover {
                     transform: scale(1.5);
@@ -87,11 +83,24 @@ export default {
                     .info{
                         opacity: 1;
                         height: 70px;
-                        transition: height .5s;
+                        .arrow{
+                        animation: upAndDown 1.5s infinite ease ;
+                    }
                         &.active{
                             height: 100%;
-                            i{
+                            .arrow{
                                 transform: rotate(180deg);
+                                /* @keyframes upAndDown{
+                                    0%{
+                                        transform: translateY(0);
+                                    }
+                                    50%{
+                                        transform: translateY(7px);
+                                    }
+                                    100%{
+                                        transform: translateY(0);
+                                    }
+                                } */
                             }
                         }
                     }

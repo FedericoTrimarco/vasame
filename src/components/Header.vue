@@ -24,11 +24,10 @@
         </div>
 
 
-        <div class="responsive-info d-lg-none" :class="{active : active == true}">
-            <ul class="list-unstyled d-flex flex-column pt-5 align-items-center primary-font border h-100">
+        <div class="responsive-info text-center d-lg-none" :class="{active : active == true}">
+            <ul class="list-unstyled pt-5 primary-font border h-100">
                 <li
                     @click="showRemoveInfo"
-                    class="me-5"
                     v-for="(el, id) in mainArray" :key="`link-${id}`">
                     <a :href="el.directory">{{ el.title }}</a>
                 </li>
@@ -90,6 +89,7 @@ export default {
             }
         }
     }
+
     .responsive-info{
         position: relative;
         z-index: 6;
@@ -98,9 +98,14 @@ export default {
         overflow: hidden;
         background-color: $secondColor;
         width: 100vw;
-        font-size: 100px;
+        font-size: 5rem;
         &.active{
             height: 100vh;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        img{
+            height: 100px;
         }
     }
 </style>
