@@ -111,6 +111,11 @@ export default {
         }
     }
     @media screen and (max-width: 991px) {
+        #section-three{
+            h1{
+                font-size: 60px;
+            }
+        }
         .arrow, h5{
             display: none
         }

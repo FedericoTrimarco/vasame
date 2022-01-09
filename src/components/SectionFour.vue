@@ -36,4 +36,9 @@ export default {
             }
         }
     }
+    #section-four{
+        h1{
+            font-size: 60px;
+        }
+    }
 </style>

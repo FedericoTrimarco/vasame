@@ -32,5 +32,8 @@ export default {
             }
         }
     }
+    @media screen and (max-width: 991px) {
+        
+    }
 
 </style>

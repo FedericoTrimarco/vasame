@@ -20,10 +20,12 @@
                 </div>
                 <div class="col-lg-6 col-md-12 px-5 text-md-center text-lg-start">
                     <h3>CHI SIAMO ?</h3>
-                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit.</p>
-                    <img src="../assets/stripe.png" alt="stripe" class="w-25 d-lg-none mb-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit.</p>
+                    
+                    <img src="../assets/stripe.png" alt="stripe" class="w-25 mb-4">
+                    
                     <h3>COM'E` NATO IL PROGETTO ?</h3>
-                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>
                 </div>
             </div>
         </div>
@@ -53,6 +55,14 @@ export default {
 
         p{
             color: gray;
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        #section-two{
+            h1{
+                font-size: 60px;
+            }
         }
     }
 </style>

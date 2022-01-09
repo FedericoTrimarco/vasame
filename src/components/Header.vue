@@ -74,7 +74,7 @@ export default {
                 text-decoration: none;
             }
     
-            &::after{
+            &.me-5::after{
                 content: '';
                 display: block;
                 height: 5px;
@@ -97,7 +97,7 @@ export default {
         height: 0;
         transition: height .2s linear;
         overflow: hidden;
-        background-color: $secondColor;
+        background-color: $bgTrasnparent;
         width: 100vw;
         font-size: 5rem;
         &.active{

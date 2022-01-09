@@ -35,7 +35,6 @@ export default {
 @import '../style/utilities.scss';
     footer{
         background-color: $thirdPurple;
-        
         li{
             font-size: 25px;
             a{
@@ -55,6 +54,11 @@ export default {
     /**********
     RESPONSIVE
     **********/
+    @media screen and (max-width: 991px) {
+        h2{
+            font-size: 40px;
+        }
+    }
     @media screen and (max-width: 767px) {
         h2{
             text-align: center;
