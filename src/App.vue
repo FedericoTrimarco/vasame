@@ -5,7 +5,7 @@
     <main>
       <SectionOne class="d-none d-lg-block"/>
       <SectionTwo />
-      <SectionThree :mainArray="vases"/>
+      <SectionThree :mainArray="vases" @lello="getBlur"/>
       <SectionFour />
     </main>
 
@@ -41,8 +41,9 @@ export default {
       // ARRAY
       vases,
       section,
+
     }
-  }
+  },
 }
 </script>
 

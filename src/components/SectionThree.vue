@@ -36,15 +36,18 @@
             <i class="fas fa-times position-absolute top-0 end-0 text-white" @click="removePopup"></i>
             <!-- pupup-img -->
             <div class="w-75" @click="showInfo">
-                <h4 class="text-white text-center mb-4">Tap on the vase</h4>
+                <h4 class="text-white text-center mb-4 fs-1">Tap on the vase</h4>
                 <div class="popup-img text-center position-relative">
                     <img :src="require(`../assets${mainArray[src].imgSrc}`)" alt="" class="w-100">
                     <div
-                        class="info-popup position-absolute top-0 start-0 border w-100 h-100 d-flex flex-column justify-content-center"
-                        :class="{active : active == true}">
-                        <h4 class="text-black fs-1 mb-2">{{ mainArray[src].title }}</h4>
-                        <p>{{ mainArray[src].info }}</p>
-                        <a :href="mainArray[src].linkShop" target="_blank">SHOP NOW</a>
+                        class="info-popup position-absolute top-0 start-0 border w-100 h-100 d-flex flex-column align-items-center justify-content-center"
+                        :class="{active : active == true}"
+                    >
+                        <div v-show="active == true">
+                            <h4 class="text-black fs-1">{{ mainArray[src].title }}</h4>
+                            <p>{{ mainArray[src].info }}</p>
+                            <a :href="mainArray[src].linkShop" target="_blank">SHOP NOW</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,7 +81,6 @@ export default {
         },
         removePopup(){
             this.popup = false;
-            this.active = false;
         },
         changeSrc(id){
             this.src = id;
@@ -161,19 +163,21 @@ export default {
         .popup{
             background-color: rgba(0,0,0,0.5);
             opacity: 0;
-            transition: opacity .3s linear;
+            transition: opacity .5s linear;
+            backdrop-filter: blur(10px);
             .popup-img{
                 border-radius: 10px;
                 overflow: hidden;
+                img{
+                    position: relative;
+                }
                 .info-popup{
                     background-color: rgba(255, 255, 255, 0.616);
-                    display: none;
                     opacity: 0;
                     transition: opacity .3s linear;
                     overflow: hidden;
                     &.active{
                         opacity: 1;
-                        display: block;
                     }
                 }
             }
