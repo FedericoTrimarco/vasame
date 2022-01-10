@@ -129,6 +129,7 @@ export default {
             }
             &:hover {
                 transform: scale(1.23);
+                z-index: 1;
                 .info{
                     opacity: 1;
                     height: 70px;
