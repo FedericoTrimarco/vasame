@@ -61,7 +61,7 @@ export default {
     header{
         background: rgb(255,220,254);
         background: linear-gradient(180deg, rgba(255,220,254,0.8603816526610644) 52%, rgba(255,220,254,0.7203256302521008) 88%);
-        z-index: 20;
+        z-index: 10;
         border: 1px solid $fourth;
         img{
             height: 150px;
