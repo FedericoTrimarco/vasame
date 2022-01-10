@@ -70,7 +70,7 @@ export default {
         },
         removePopup(){
             this.popup = false;
-            this.showInfo();
+            this.active = false;
         },
         changeSrc(id){
             this.src = id;
