@@ -1,5 +1,5 @@
 <template>
-    <div id="section-four" class="position-relative">
+    <section id="section-four" class="position-relative">
         <div class="container d-flex flex-column align-items-center">
             <h1 class="primary-font fs-80px">Shop</h1>
             <div class="icons d-flex my-5">
@@ -10,7 +10,7 @@
             </div>
             <p class="fs-2 text-center">puoi trovare tutti i nostri prodotti nel <br> <a href="https://www.etsy.com/it/shop/vasamenapoli" target="_blank">nostro shop Etsy</a>!</p>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
 @import '../style/variables.scss';
 @import '../style/utilities.scss';
     #section-four{
-        padding: 150px 0;
+        padding: 100px 0;
         h1{
             color: $firstColor;
         }

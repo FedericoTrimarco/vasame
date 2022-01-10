@@ -1,12 +1,12 @@
 <template>
-    <div class="section-one">
+    <section class="section-one">
         <div class="title w-100 h-100 d-flex justify-content-center align-items-center position-relative">
             <video width="100%" height="100%" autoplay muted loop>
                 <source src="../assets/video.mp4" type="video/mp4">
             </video>
             <h1 class="position-absolute top-50 start-50 translate-middle primary-font">Vasame</h1>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

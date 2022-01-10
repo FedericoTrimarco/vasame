@@ -1,5 +1,5 @@
 <template>
-    <div id="section-three">
+    <section id="section-three">
         <div class="container text-center">
             <h1 class="my-5 pb-5 primary-font fs-80px">Gallery</h1>
             <div class="row">
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 </template>
 
 <script>
@@ -94,7 +94,7 @@ export default {
 @import '../style/utilities.scss';
     #section-three{
         background-color: $thirdPurple;
-        padding: 180px 0;
+        padding: 100px 0;
         border-bottom: 1px solid lightgray;
         a{
             font-size: 25px;

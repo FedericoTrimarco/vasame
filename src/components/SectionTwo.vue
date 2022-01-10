@@ -1,5 +1,5 @@
 <template>
-    <div id="section-two">
+    <section id="section-two">
         <div class="container text-center">
             <h1 class="mb-5 primary-font fs-80px">About</h1>
             <div class="row pt-5 mb-5 align-items-center">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -46,7 +46,7 @@ export default {
             border-radius: 10px;
             overflow: hidden;
         }
-        padding: 200px 0;
+        padding: 100px 0;
         border-bottom: 2px solid lightgray;
 
         h1{
