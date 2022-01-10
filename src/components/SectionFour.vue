@@ -8,7 +8,7 @@
                     <h4>qualsiasi carta di credito</h4>
                 </div>
             </div>
-            <p class="fs-2">puoi trovare tutti i nostri prodotti nel <a href="https://www.etsy.com/it/shop/vasamenapoli" target="_blank">nostro shop Etsy</a>!</p>
+            <p class="fs-2 text-center">puoi trovare tutti i nostri prodotti nel <br> <a href="https://www.etsy.com/it/shop/vasamenapoli" target="_blank">nostro shop Etsy</a>!</p>
         </div>
     </div>
 </template>
