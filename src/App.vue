@@ -5,7 +5,7 @@
     <main>
       <SectionOne class="d-none d-lg-block"/>
       <SectionTwo />
-      <SectionThree :mainArray="vases" @lello="getBlur"/>
+      <SectionThree :mainArray="vases"/>
       <SectionFour />
     </main>
 
