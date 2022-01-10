@@ -24,6 +24,7 @@
 
                             <h2 class="primary-font">{{ vase.title }}</h2>
                             <p>{{ vase.info }}</p>
+                            <a :href="vase.linkShop" target="_blank">SHOP</a>
                         </div>
                     </div>
                 </div>
@@ -43,6 +44,7 @@
                         :class="{active : active == true}">
                         <h4 class="text-black fs-1 mb-2">{{ mainArray[src].title }}</h4>
                         <p>{{ mainArray[src].info }}</p>
+                        <a :href="mainArray[src].linkShop" target="_blank">SHOP</a>
                     </div>
                 </div>
             </div>
@@ -92,6 +94,14 @@ export default {
         background-color: $thirdPurple;
         padding: 180px 0;
         border-bottom: 1px solid lightgray;
+        a{
+            font-size: 25px;
+            text-decoration: none;
+            color: $firstColor;
+            &:hover{
+                color: $secondColor;
+            }
+        }
         h1{
             color: $firstColor;
         }
