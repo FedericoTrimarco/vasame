@@ -44,8 +44,8 @@
                         :class="{active : active == true}"
                     >
                         <div v-show="active == true">
-                            <h4 class="text-black fs-1">{{ mainArray[src].title }}</h4>
-                            <p>{{ mainArray[src].info }}</p>
+                            <h4 class="text-black fs-1 primary-font">{{ mainArray[src].title }}</h4>
+                            <p class="px-5">{{ mainArray[src].info }}</p>
                             <a :href="mainArray[src].linkShop" target="_blank">SHOP NOW</a>
                         </div>
                     </div>
