@@ -35,8 +35,8 @@
                 <div class="popup-img text-center position-relative">
                     <img :src="require(`../assets${mainArray[src].imgSrc}`)" alt="" class="w-100">
                     <div class="info-popup position-absolute top-0 start-0 border w-100 d-flex flex-column justify-content-center" :class="{active : active == true}">
-                        <h4 class="text-black fs-1 mb-4">{{ mainArray[src].title }}</h4>
-                        <p class="fs-5">{{ mainArray[src].info }}</p>
+                        <h4 class="text-black fs-1 mb-2">{{ mainArray[src].title }}</h4>
+                        <p>{{ mainArray[src].info }}</p>
                     </div>
                 </div>
             </div>
