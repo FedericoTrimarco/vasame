@@ -130,7 +130,6 @@ export default {
                     }
                     &.active{
                         height: 100%;
-                        border: 8px solid red;
                     }
                 }
             }
