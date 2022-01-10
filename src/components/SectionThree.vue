@@ -11,7 +11,11 @@
                 >
                     <div class="vase position-relative">
                         <img :src="require(`../assets${vase.imgSrc}`)" :alt="vase.title" class="w-100" @click="showPopup">
-                        <div class="info position-absolute bottom-0 w-100 px-5 cursor-pointer" @click="showInfo" :class="{active : active == true}">
+                        <div
+                            class="info position-absolute bottom-0 w-100 px-5 cursor-pointer" 
+                            :class="{active : active == true}"
+                            @click="showInfo"
+                        >
                             <i class="fas fa-angle-up cursor-pointer arrow" v-if="active == false"></i>
                             <i class="fas fa-chevron-down arrow" v-else></i>
 
@@ -34,7 +38,9 @@
                 <h4 class="text-white text-center mb-4">Tap on the vase</h4>
                 <div class="popup-img text-center position-relative">
                     <img :src="require(`../assets${mainArray[src].imgSrc}`)" alt="" class="w-100">
-                    <div class="info-popup position-absolute top-0 start-0 border w-100 h-100 d-flex flex-column justify-content-center" :class="{active : active == true}">
+                    <div
+                        class="info-popup position-absolute top-0 start-0 border w-100 h-100 d-flex flex-column justify-content-center"
+                        :class="{active : active == true}">
                         <h4 class="text-black fs-1 mb-2">{{ mainArray[src].title }}</h4>
                         <p>{{ mainArray[src].info }}</p>
                     </div>

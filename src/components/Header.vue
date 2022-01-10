@@ -9,7 +9,8 @@
                 <ul class="list-unstyled d-flex fs-1 primary-font">
                     <li
                         class="me-5"
-                        v-for="(el, id) in mainArray" :key="`link-${id}`">
+                        v-for="(el, id) in mainArray" :key="`link-${id}`"
+                    >
                         <a :href="el.directory">{{ el.title }}</a>
                     </li>
                 </ul>
@@ -28,7 +29,8 @@
             <ul class="list-unstyled pt-5 primary-font border h-100">
                 <li
                     @click="showRemoveInfo"
-                    v-for="(el, id) in mainArray" :key="`link-${id}`">
+                    v-for="(el, id) in mainArray" :key="`link-${id}`"
+                >
                     <a :href="el.directory">{{ el.title }}</a>
                 </li>
             </ul>
@@ -60,13 +62,15 @@ export default {
 @import '../style/utilities.scss';
     header{
         background: rgb(255,220,254);
-        background: linear-gradient(180deg, rgba(255,220,254,0.8603816526610644) 52%, rgba(255,220,254,0.7203256302521008) 88%);
+        background: linear-gradient(
+            180deg, rgba(255,220,254,0.8603816526610644) 52%,
+            rgba(255,220,254,0.7203256302521008) 88%
+        );
         z-index: 10;
         border: 1px solid $fourth;
         img{
             height: 150px;
         }
-
 
         li{
             a{
