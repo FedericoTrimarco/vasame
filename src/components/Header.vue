@@ -69,7 +69,7 @@ export default {
         z-index: 2;
         border: 1px solid $fourth;
         img{
-            height: 150px;
+            height: 100px;
         }
 
         li{
