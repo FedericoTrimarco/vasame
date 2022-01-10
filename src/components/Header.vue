@@ -66,7 +66,7 @@ export default {
             180deg, rgba(255,220,254,0.8603816526610644) 52%,
             rgba(255,220,254,0.7203256302521008) 88%
         );
-        z-index: 10;
+        z-index: 2;
         border: 1px solid $fourth;
         img{
             height: 150px;
@@ -96,8 +96,6 @@ export default {
     }
 
     .responsive-info{
-        position: relative;
-        z-index: 6;
         height: 0;
         transition: height .2s linear;
         overflow: hidden;

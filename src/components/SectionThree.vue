@@ -129,7 +129,6 @@ export default {
             }
             &:hover {
                 transform: scale(1.23);
-                z-index: 5;
                 .info{
                     opacity: 1;
                     height: 70px;
@@ -188,14 +187,14 @@ export default {
             }
             &.active{
                 opacity: 1;
-                z-index: 11;
+                z-index: 3;
             }
         }
         .arrow, h5{
             display: none
         }
-        .vases{
-            z-index: 5;
+            .vases{
+                z-index: 1;
 
             .info{
                 display: none;

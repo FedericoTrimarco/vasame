@@ -1,5 +1,5 @@
 <template>
-    <div id="section-four">
+    <div id="section-four" class="position-relative">
         <div class="container d-flex flex-column align-items-center">
             <h1 class="primary-font fs-80px">Shop</h1>
             <div class="icons d-flex my-5">

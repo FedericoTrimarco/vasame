@@ -1,5 +1,5 @@
 <template>
-    <footer class="py-5">
+    <footer class="py-5 position-relative">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-12 d-flex flex-column align-items-center">
@@ -11,13 +11,13 @@
                             </li>
                             <li class="my-3">number: <a href="tel:+447927975669″">+44 7927975669</a></li>
                             <li>
-                                email: <a href=" mailto: trimarcofabrizia@gmail.com" target="_blank">trimarcofabrizia@gmail.com</a>
+                                email: <a href="mailto: trimarcofabrizia@gmail.com" target="_blank">trimarcofabrizia@gmail.com</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <img src="../assets/logo-vasame-transparent.png" alt="" class="w-100">
+                    <img src="../assets/logo-vasame-transparent.png" alt="logo-vasame" class="w-100">
                 </div>
             </div>
         </div>
