@@ -43,9 +43,9 @@
                         class="info-popup position-absolute top-0 start-0 border w-100 h-100 d-flex flex-column align-items-center justify-content-center"
                         :class="{active : active == true}"
                     >
-                        <div v-show="active == true">
+                        <div v-show="active == true" class="px-4">
                             <h4 class="text-black fs-1 primary-font">{{ mainArray[src].title }}</h4>
-                            <p class="px-5">{{ mainArray[src].info }}</p>
+                            <p>{{ mainArray[src].info }}</p>
                             <a :href="mainArray[src].linkShop" target="_blank">SHOP NOW</a>
                         </div>
                     </div>
