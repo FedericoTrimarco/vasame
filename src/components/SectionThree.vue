@@ -70,6 +70,7 @@ export default {
         },
         removePopup(){
             this.popup = false;
+            this.showInfo();
         },
         changeSrc(id){
             this.src = id;
