@@ -20,12 +20,12 @@
                 </div>
                 <div class="col-lg-6 col-md-12 px-5 text-md-center text-lg-start">
                     <h3>CHI SIAMO ?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem deserunt, sint, quaerat dolore recusandae at sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi vol.</p>
                     
                     <img src="../assets/stripe.png" alt="stripe" class="w-25 mb-4">
                     
                     <h3>COM'E` NATO IL PROGETTO ?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi voluptas et ea a, pariatur, totam, porro aspernatur labore voluptate beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam, voluptatem .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum animi vero et rem consectetur odio. Delectus maiores modi vol.</p>
                 </div>
             </div>
         </div>

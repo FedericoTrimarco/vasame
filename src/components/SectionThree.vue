@@ -36,7 +36,7 @@
             <i class="fas fa-times position-absolute top-0 end-0 text-white" @click="removePopup"></i>
             <!-- pupup-img -->
             <div class="w-75" @click="showInfo">
-                <h4 class="text-white text-center mb-4 fs-1">Tap on the vase</h4>
+                <h4 class="text-white text-center mb-4 fs-2">Tap on the vase</h4>
                 <div class="popup-img text-center position-relative">
                     <img :src="require(`../assets${mainArray[src].imgSrc}`)" alt="" class="w-100">
                     <div

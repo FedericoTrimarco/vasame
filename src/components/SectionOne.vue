@@ -1,5 +1,5 @@
 <template>
-    <section class="section-one">
+    <section id="section-one">
         <div class="title w-100 h-100 d-flex justify-content-center align-items-center position-relative">
             <video width="100%" height="100%" autoplay muted loop>
                 <source src="../assets/video.mp4" type="video/mp4">
@@ -18,7 +18,7 @@ export default {
 <style scoped lang="scss">
 @import '../style/utilities.scss';
 @import '../style/variables.scss';
-    .section-one{
+    #section-one{
         height: 100vh;
         video{
             object-fit: cover;

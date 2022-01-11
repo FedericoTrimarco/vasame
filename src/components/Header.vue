@@ -26,7 +26,7 @@
 
 
         <div class="responsive-info text-center d-lg-none" :class="{active : active == true}">
-            <ul class="list-unstyled pt-5 primary-font border h-100">
+            <ul class="list-unstyled pt-4 primary-font border h-100">
                 <li
                     @click="showRemoveInfo"
                     v-for="(el, id) in mainArray" :key="`link-${id}`"
@@ -101,7 +101,7 @@ export default {
         overflow: hidden;
         background-color: $bgTrasnparent;
         width: 100vw;
-        font-size: 5rem;
+        font-size: 3rem;
         &.active{
             height: 100vh;
         }
