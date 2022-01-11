@@ -183,6 +183,7 @@ export default {
                     transition: opacity .3s linear;
                     div{
                         overflow: scroll;
+                        color: red;
                     }
                     &.active{
                         opacity: 1;
