@@ -154,6 +154,11 @@ export default {
             }
         }
     }
+    @media screen and (max-height: 500px){
+        .popup{
+            padding: 0 30%;
+        }
+    }
     @media screen and (max-width: 991px) {
         #section-three{
             h1{
@@ -165,6 +170,7 @@ export default {
             opacity: 0;
             transition: opacity .5s linear;
             backdrop-filter: blur(10px);
+            // padding: 0 200px;
             .popup-img{
                 border-radius: 10px;
                 overflow: hidden;
