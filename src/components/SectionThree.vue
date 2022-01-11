@@ -170,7 +170,6 @@ export default {
             opacity: 0;
             transition: opacity .5s linear;
             backdrop-filter: blur(10px);
-            // padding: 0 200px;
             .popup-img{
                 border-radius: 10px;
                 overflow: hidden;
@@ -183,7 +182,6 @@ export default {
                     transition: opacity .3s linear;
                     div{
                         overflow: scroll;
-                        color: red;
                     }
                     &.active{
                         opacity: 1;
