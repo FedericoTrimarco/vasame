@@ -154,9 +154,9 @@ export default {
             }
         }
     }
-    @media screen and (max-height: 500px){
+    @media screen and (max-height: 550px){
         .popup{
-            padding: 0 30%;
+            padding: 0 26%;
         }
     }
     @media screen and (max-width: 991px) {
@@ -181,7 +181,9 @@ export default {
                     background-color: rgba(255, 255, 255, 0.616);
                     opacity: 0;
                     transition: opacity .3s linear;
-                    overflow: hidden;
+                    div{
+                        overflow: scroll;
+                    }
                     &.active{
                         opacity: 1;
                     }
